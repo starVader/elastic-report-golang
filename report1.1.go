@@ -3,10 +3,10 @@ package main
 import (
 	"encoding/csv"
 	"os"
-    "encoding/json"
-    "log"
-    "io"
-    "fmt"
+    	"encoding/json"
+    	"log"
+    	"io"
+    	"fmt"
 	"gopkg.in/olivere/elastic.v3"
     )
 
