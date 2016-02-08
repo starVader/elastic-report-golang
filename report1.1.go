@@ -43,9 +43,9 @@ type output interface{
 }
 
 type Query struct {
-    scroll_index string
-    search_type string
-    search_field string
+    scroll_index string    // index to be scrolled
+    search_type string	   // type to be scrolled
+    search_field string    //search the string in type
 
 }
 
