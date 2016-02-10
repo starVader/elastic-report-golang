@@ -31,3 +31,19 @@ func TestFunction(t *testing.T) {
 		}
 	}
 }
+
+//Benchmark getclient  function
+func BenchmarkGetc(b *testing.B) {
+     b.ResetTimer()
+     for i := 0; i < b.N; i++ {
+         getClient()
+     }
+}
+
+//Benchmark getwriter function
+func BenchmarkCsv(b *testing.B) {
+     b.ResetTimer()
+     for i := 0; i < b.N; i++ {
+         getwriter()
+     }
+}
