@@ -41,7 +41,7 @@ func (c Tweet) csvWriter(writer *csv.Writer, m chan Tweet) {
 	var mutex = &sync.Mutex{}
 	for i := range m {
 		c = i
-		fmt.Println(c)
+		//fmt.Println(c)
 		data := []string{c.User, c.Post_date, c.Message}
 		mutex.Lock()
 		writer.Write(data)
